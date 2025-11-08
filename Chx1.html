@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>Spherical conductor with surface charge ‣ DesJardin Blog</title>
-<!--Generated on Wed Oct  1 15:34:47 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Generated on Sat Nov  8 08:21:47 2025 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
 
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-book.css" type="text/css">
@@ -22,13 +22,697 @@
 <section class="ltx_chapter">
 <h1 class="ltx_title ltx_title_chapter">Spherical conductor with surface charge</h1>
 
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">There is a metal sphere that is charged to some potential. We are going to solve this problem in maximum detail. The solution to this setup will be given by Poisson’s equation</p>
+</div>
+<div id="p2" class="ltx_para">
+<table id="E1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E1.m1" class="ltx_Math" alttext="\nabla^{2}\phi=-\frac{\rho}{\epsilon_{0}}," display="block"><mrow><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mi>ρ</mi><msub><mi>ϵ</mi><mn>0</mn></msub></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">where <math id="p3.m1" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> is the electrostatic potential, <math id="p3.m2" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> is the charge density in Coulombs per meter cubed, and <math id="p3.m3" class="ltx_Math" alttext="\epsilon_{0}" display="inline"><msub><mi>ϵ</mi><mn>0</mn></msub></math> is the permittivity of free space. Consider a spherical conductor with some surface charge density <math id="p3.m4" class="ltx_Math" alttext="\sigma(\theta,\varphi)" display="inline"><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>,</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow></math> where <math id="p3.m5" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is the azimuth and <math id="p3.m6" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> is the co-latitude on the sphere. Since <math id="p3.m7" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> is constant inside the sphere and the conductor will contain some surface charge, it would be appropriate to write <math id="p3.m8" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> as</p>
+</div>
+<div id="p4" class="ltx_para">
+<table id="E2" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E2.m1" class="ltx_Math" alttext="\rho=\sigma\delta(r-R)," display="block"><mrow><mrow><mi>ρ</mi><mo>=</mo><mrow><mi>σ</mi><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>−</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">where <math id="p5.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is the radius of the sphere. This <math id="p5.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> dependent term comes from the dirac delta function being written in spherical coordinates (see <a href="https://books.physics.oregonstate.edu/LinAlg/delta3d.html" title="" class="ltx_ref ltx_href">this website</a> or <a href="https://en.wikipedia.org/wiki/Classical_Electrodynamics_(book)" title="" class="ltx_ref ltx_href ltx_font_italic">Jackson, Classical Electrodynamics</a> for example). Substituting Eqn. <a href="#E2" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> into <a href="#E1" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> and expressing the Laplacian in full spherical coordinates one finds that</p>
+</div>
+<div id="p6" class="ltx_para">
+<table id="E3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E3.m1" class="ltx_Math" alttext="\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\phi}{%
+\partial r}\right)+\frac{1}{r^{2}\sin\theta}\frac{\partial}{\partial\theta}%
+\left(\sin\theta\frac{\partial\phi}{\partial\theta}\right)+\frac{1}{r^{2}\sin^%
+{2}\theta}\frac{\partial^{2}\phi}{\partial\varphi^{2}}=-\epsilon_{0}^{-1}%
+\sigma(\theta,\varphi)\frac{\delta(r-R)}{r^{2}\sin\theta}." display="block"><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mfrac><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><msup><mi>r</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><msubsup><mi>ϵ</mi><mn>0</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>,</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>−</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">The <math id="p7.m1" class="ltx_Math" alttext="r^{-2}" display="inline"><msup><mi>r</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup></math> terms to cancel.</p>
+</div>
+<div id="p8" class="ltx_para">
+<table id="E4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E4.m1" class="ltx_Math" alttext="\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\phi}{\partial r}\right)+%
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{%
+\partial\phi}{\partial\theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2%
+}\phi}{\partial\varphi^{2}}=-\epsilon_{0}^{-1}\sigma(\theta,\varphi)\frac{%
+\delta(r-R)}{\sin\theta}." display="block"><mrow><mrow><mrow><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac></mrow></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><msup><mi>sin</mi><mn>2</mn></msup><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><msubsup><mi>ϵ</mi><mn>0</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>,</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>−</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">Another nice simplification is to let <math id="p9.m1" class="ltx_Math" alttext="\xi=\cos\theta" display="inline"><mrow><mi>ξ</mi><mo>=</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></math>. Then <math id="p9.m2" class="ltx_Math" alttext="{\sin\theta}\frac{\partial}{\partial\theta}=-\frac{\partial}{\partial\xi}" display="inline"><mrow><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>θ</mi></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>ξ</mi></mrow></mfrac></mrow></mrow></math>. Then</p>
+</div>
+<div id="p10" class="ltx_para">
+<table id="E5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E5.m1" class="ltx_Math" alttext="\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\phi}{\partial r}\right)+%
+\frac{1}{\sqrt{1-\xi^{2}}}\frac{\partial^{2}\phi}{\partial\xi^{2}}+\frac{1}{1-%
+\xi^{2}}\frac{\partial^{2}\phi}{\partial\varphi^{2}}=-\epsilon_{0}^{-1}\sigma(%
+\xi,\varphi)\frac{\delta(r-R)}{\sqrt{1-\xi^{2}}}." display="block"><mrow><mrow><mrow><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><msubsup><mi>ϵ</mi><mn>0</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>−</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p11" class="ltx_para ltx_noindent">
+<p class="ltx_p">This PDE can solved by seperation of variables in <math id="p11.m1" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math>. Clearly the <math id="p11.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> part seperates out from the <math id="p11.m3" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> and <math id="p11.m4" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> parts. Say <math id="p11.m5" class="ltx_Math" alttext="\phi(r,\xi,\varphi)=R(r)C(\xi,\varphi)" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>ξ</mi><mo>,</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. For now let’s consider just the homogeneous solution. Then Eqn. <a href="#E5" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a> seperates into</p>
+</div>
+<div id="p12" class="ltx_para">
+<table id="Sx7.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E6.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial}{\partial r}\left(r^{2}\frac{\partial R}{\partial r%
+}\right)+kR" display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mi>R</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E6.m2" class="ltx_Math" alttext="\displaystyle=0" display="inline"><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr></tbody>
+<tbody id="E7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E7.m1" class="ltx_Math" alttext="\displaystyle kC+\frac{1}{\sqrt{1-\xi^{2}}}\frac{\partial^{2}C}{\partial\xi^{2%
+}}+\frac{1}{1-\xi^{2}}\frac{\partial^{2}C}{\partial\varphi^{2}}" display="inline"><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>C</mi></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>C</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>C</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E7.m2" class="ltx_Math" alttext="\displaystyle=0" display="inline"><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p13" class="ltx_para ltx_noindent">
+<p class="ltx_p">where <math id="p13.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is a constant. Eqn. <a href="#E6" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6</span></a> has the possible solutions <math id="p13.m2" class="ltx_Math" alttext="R(r)=Ar^{\left(-1+\sqrt{1+4k}\right)/2}+B" display="inline"><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mi>r</mi><mrow><mrow><mo>(</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>+</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msqrt></mrow><mo>)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mi>B</mi></mrow></mrow></math> and <math id="p13.m3" class="ltx_Math" alttext="R(r)=Ar^{\left(-1-\sqrt{1+4k}\right)/2}+B" display="inline"><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mi>r</mi><mrow><mrow><mo>(</mo><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>−</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>k</mi></mrow></mrow></msqrt></mrow><mo>)</mo></mrow><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>+</mo><mi>B</mi></mrow></mrow></math> where <math id="p13.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="p13.m5" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> are also constants. This is easier to undstand if a new variable <math id="p13.m6" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> is introduced such that <math id="p13.m7" class="ltx_Math" alttext="l(l+1)=-k" display="inline"><mrow><mrow><mi>l</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mi>k</mi></mrow></mrow></math>. Then Eqn. <a href="#E6" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6</span></a> becomes</p>
+</div>
+<div class="ltx_logical-block ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+      
+<div id="p14" class="ltx_para">
+<table id="E8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E8.m1" class="ltx_Math" alttext="\frac{\partial}{\partial r}\left(r^{2}\frac{\partial R}{\partial r}\right)-l(l%
++1)R=0" display="block"><mrow><mrow><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>R</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>−</mo><mrow><mi>l</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>R</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p ltx_align_center">with solutions <math id="m1" class="ltx_Math" alttext="R\sim r^{l}" display="inline"><mrow><mi>R</mi><mo>∼</mo><msup><mi>r</mi><mi>l</mi></msup></mrow></math> &amp; <math id="m2" class="ltx_Math" alttext="r^{-(l+1)}" display="inline"><msup><mi>r</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></math>, <math id="m3" class="ltx_Math" alttext="l\geq 0" display="inline"><mrow><mi>l</mi><mo>≥</mo><mn>0</mn></mrow></math>.</p>
+</div>
+    
+</div>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">In our notation, <math id="p15.m1" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> is a positive integer. Eqn. <a href="#E8" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8</span></a> doesn’t have a name to my knowledge. What is describes is diffusion along a radial coordinate. The <math id="p15.m2" class="ltx_Math" alttext="r^{2}" display="inline"><msup><mi>r</mi><mn>2</mn></msup></math> provides a geometric factor that “spreads” the solution out along <math id="p15.m3" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math>.<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+            <span class="ltx_tag ltx_tag_note">1</span>
+            
+            
+            
+          Consider a 1D diffusion/heat equation, <math id="footnote1.m1" class="ltx_Math" alttext="u_{t}=Du_{xx}" display="inline"><mrow><msub><mi>u</mi><mi>t</mi></msub><mo>=</mo><mrow><mi>D</mi><mo>⁢</mo><msub><mi>u</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub></mrow></mrow></math>. Assuming the time part of the solution goes <math id="footnote1.m2" class="ltx_Math" alttext="\exp\left(-\gamma t\right)" display="inline"><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mo>−</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>)</mo></mrow></mrow></math>, then <math id="footnote1.m3" class="ltx_Math" alttext="u_{xx}+(\gamma/D)u=0" display="inline"><mrow><mrow><msub><mi>u</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>γ</mi><mo>/</mo><mi>D</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>u</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. The full solution to this is <math id="footnote1.m4" class="ltx_Math" alttext="u\sim\exp\left(-\gamma t+i\sqrt{\gamma D}x\right)" display="inline"><mrow><mi>u</mi><mo>∼</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow><mrow><mo>−</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><msqrt><mrow><mi>γ</mi><mo>⁢</mo><mi>D</mi></mrow></msqrt><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>. This can be seen as either (a) the highest <math id="footnote1.m5" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> Fourier components / smallest wavelengths diffuse quickest or (b) lowest <math id="footnote1.m6" class="ltx_Math" alttext="\gamma" display="inline"><mi>γ</mi></math> corresponds to the longest length scales. <math id="footnote1.m7" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> in Eqn. <a href="#E8" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8</span></a> corresponds to <math id="footnote1.m8" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math>, the diffusion coefficient. So higher <math id="footnote1.m9" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> equations correspond to the more rapidly “diffusing” components of Laplace’s equation.</span></span></span> If the first solution is used, it indicates something increasing in distance from the center of an object. Likewise, if the second solution <math id="p15.m4" class="ltx_Math" alttext="r^{-(l+1)}" display="inline"><msup><mi>r</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></math> is used, then <math id="p15.m5" class="ltx_Math" alttext="R(r)" display="inline"><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math> describes a quantity that is decreasing from the center. For example, if <math id="p15.m6" class="ltx_Math" alttext="k=-2" display="inline"><mrow><mi>k</mi><mo>=</mo><mrow><mo>−</mo><mn>2</mn></mrow></mrow></math> / <math id="p15.m7" class="ltx_Math" alttext="l=0" display="inline"><mrow><mi>l</mi><mo>=</mo><mn>0</mn></mrow></math>, then <math id="p15.m8" class="ltx_Math" alttext="R\sim r^{-1}" display="inline"><mrow><mi>R</mi><mo>∼</mo><msup><mi>r</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></math> which is the ordinary inverse square law (remember <math id="p15.m9" class="ltx_Math" alttext="E=-\partial\phi/\partial r" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mo>−</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mrow><mi>ϕ</mi><mo>/</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>r</mi></mrow></mrow></mrow></mrow></mrow></math>).<span id="footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+            <span class="ltx_tag ltx_tag_note">2</span>
+            
+            
+            
+          In undergraduate E&amp;M, one learn’s Gauss’s law. In words, if one takes a spherical shell, the charge within gives you the electric flux enclosed. Eqn. <a href="#E8" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8</span></a> also obeys Gauss’s law. This really shouldn’t come as a surprise since all we have done is taken Laplace’s equation and split it into spherical coordinates. Suppose there is a right hand side which represents a “charge per unit radial distance,” and we take integrals from <math id="footnote2.m1" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> to <math id="footnote2.m2" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> to get the “enclosed charge.” 
+<span id="Ex1" class="ltx_equation ltx_eqn_table">
+
+<span><span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="Ex1.m1" class="ltx_Math" alttext="\int_{0}^{\rho}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial R}{%
+\partial r}\right)dr-\int_{0}^{\rho}l(l+1)Rdr=-\int_{0}^{\rho}\lambda(r)dr" display="block"><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>ρ</mi></msubsup><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>R</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>r</mi></mrow></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>ρ</mi></msubsup><mrow><mi>l</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>R</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>r</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mi>ρ</mi></msubsup><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>r</mi></mrow></mrow></mrow></mrow></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span></span></span>
+</span> This can be simplified a bit. Let <math id="footnote2.m3" class="ltx_Math" alttext="Q_{enc}" display="inline"><msub><mi>Q</mi><mrow><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>c</mi></mrow></msub></math> be the integral of <math id="footnote2.m4" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> and <math id="footnote2.m5" class="ltx_Math" alttext="\Phi_{E}=-2\pi\rho^{2}\frac{\partial R}{\partial r}" display="inline"><mrow><msub><mi mathvariant="normal">Φ</mi><mi>E</mi></msub><mo>=</mo><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>R</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow></mrow></mrow></math> be the electric flux going through a shell of radius <math id="footnote2.m6" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> associated with <math id="footnote2.m7" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>. Remember, <math id="footnote2.m8" class="ltx_Math" alttext="E_{r}=-\frac{\partial\phi}{\partial r}=-C\frac{\partial R}{\partial r}" display="inline"><mrow><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mrow><mo>−</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mi>C</mi><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>R</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow></mrow></mrow></math> when we seperate variables. If there is no dependence of this shell on the location along it (i.e. on the angular coordintes), then <math id="footnote2.m9" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a constant and <math id="footnote2.m10" class="ltx_Math" alttext="l=0" display="inline"><mrow><mi>l</mi><mo>=</mo><mn>0</mn></mrow></math>. What we are left with is 
+<span id="Ex2" class="ltx_equation ltx_eqn_table">
+
+<span><span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="Ex2.m1" class="ltx_Math" alttext="\frac{1}{2\pi}\Phi_{E}=Q_{enc}." display="block"><mrow><mrow><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>⁢</mo><msub><mi mathvariant="normal">Φ</mi><mi>E</mi></msub></mrow><mo>=</mo><msub><mi>Q</mi><mrow><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>c</mi></mrow></msub></mrow><mo lspace="0em">.</mo></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span></span></span>
+</span> If <math id="footnote2.m11" class="ltx_Math" alttext="l\neq 0" display="inline"><mrow><mi>l</mi><mo>≠</mo><mn>0</mn></mrow></math> then the integral of <math id="footnote2.m12" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> shows up in Gauss’s law and the middle term requires more detail to simplify.</span></span></span></p>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">In order to make the solutions nice, we rewrote <math id="p16.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> as <math id="p16.m2" class="ltx_Math" alttext="-k=l(l+1)" display="inline"><mrow><mrow><mo>−</mo><mi>k</mi></mrow><mo>=</mo><mrow><mi>l</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Let us backtrack to Eqn. <a href="#E7" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7</span></a> and substitute that in. This equation is still a PDE since it depends on two variables, <math id="p16.m3" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> and <math id="p16.m4" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math>. However, even before seperating it out, we can see that there’s two big parts of it.</p>
+</div>
+<div id="p17" class="ltx_para">
+<table id="E9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E9.m1" class="ltx_Math" alttext="\underbrace{\frac{1}{\sqrt{1-\xi^{2}}}\frac{\partial^{2}C}{\partial\xi^{2}}-l(%
+l+1)C}_{\xi\text{ dependence}}+\underbrace{\frac{1}{1-\xi^{2}}\frac{\partial^{%
+2}C}{\partial\varphi^{2}}}_{\varphi\text{ dependence}}=0" display="block"><mrow><mrow><munder><munder accentunder="true"><mrow><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>C</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>−</mo><mrow><mi>l</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>C</mi></mrow></mrow><mo>⏟</mo></munder><mrow><mi>ξ</mi><mo>⁢</mo><mtext> dependence</mtext></mrow></munder><mo>+</mo><munder><munder accentunder="true"><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>C</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>⏟</mo></munder><mrow><mi>φ</mi><mo>⁢</mo><mtext> dependence</mtext></mrow></munder></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">We could follow the same method of seperation of variables to solve Eqn. <a href="#E9" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9</span></a> by introducing a new constant and creating two equations for <math id="p18.m1" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> and <math id="p18.m2" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math>. If you want to try this yourself, you can check your work against <a href="https://en.wikipedia.org/wiki/Spherical_harmonics" title="" class="ltx_ref ltx_href">Wikipedia</a>. However, it’s much easier to understand that the solutions to Eqn. <a href="#E9" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">9</span></a> are so common that they get their own special treatment and name. The solution to</p>
+</div>
+<div class="ltx_logical-block ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+      
+<div id="p19" class="ltx_para">
+<table id="E10" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E10.m1" class="ltx_Math" alttext="\frac{1}{\sqrt{1-\xi^{2}}}\frac{\partial^{2}C}{\partial\xi^{2}}-l(l+1)C+\frac{%
+1}{1-\xi^{2}}\frac{\partial^{2}C}{\partial\varphi^{2}}=0" display="block"><mrow><mrow><mrow><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>C</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>−</mo><mrow><mi>l</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>C</mi></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>C</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p ltx_align_center">is <math id="m4" class="ltx_Math" alttext="C(\xi,\varphi)\sim P^{m}_{l}(\xi)e^{im\varphi},l,m\in\mathbb{Z}" display="inline"><mrow><mrow><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo>,</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∼</mo><mrow><mrow><msubsup><mi>P</mi><mi>l</mi><mi>m</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>φ</mi></mrow></msup></mrow><mo>,</mo><mi>l</mi></mrow></mrow><mo>,</mo><mrow><mi>m</mi><mo>∈</mo><mi>ℤ</mi></mrow></mrow></math>,</p>
+<p class="ltx_p ltx_align_center">where <math id="m5" class="ltx_Math" alttext="P^{m}_{l}(\xi)" display="inline"><mrow><msubsup><mi>P</mi><mi>l</mi><mi>m</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></math> are the <span class="ltx_text ltx_font_italic">Legendre polynomials</span>.</p>
+</div>
+    
+</div>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">For convienence, this whole quantity is given a name, the “spherical harmonic function” and is written as <math id="p20.m1" class="ltx_Math" alttext="Y^{m}_{l}=\sqrt{\frac{(2l+1)(l-m)!}{4\pi(l+m)!}}P^{m}_{l}(\xi)e^{im\varphi}" display="inline"><mrow><msubsup><mi>Y</mi><mi>l</mi><mi>m</mi></msubsup><mo>=</mo><mrow><msqrt><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>l</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>−</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></msqrt><mo>⁢</mo><msubsup><mi>P</mi><mi>l</mi><mi>m</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>φ</mi></mrow></msup></mrow></mrow></math>. Legendre polynomials are just algebraic polynomials. The reason they are given a fancy name is because the highest exponent in the polynomial depends on the constant <math id="p20.m2" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math>.</p>
+</div>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">And that’s it! Now we can write the homogeneous solution to Eqn. <a href="#E5" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a> down in terms of a sum of these solutions. Remember two solutions to a linear PDE can always be added together to make a new solution. So the “full” solution in any circumstance is really a sum over many “basic” solutions. The weight of the consituent solutions determines the full solution.</p>
+</div>
+<div class="ltx_logical-block ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+      
+<div id="p22" class="ltx_para">
+<table id="E11" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E11.m1" class="ltx_Math" alttext="\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\phi}{\partial r}\right)+%
+\frac{1}{\sqrt{1-\xi^{2}}}\frac{\partial^{2}\phi}{\partial\xi^{2}}+\frac{1}{1-%
+\xi^{2}}\frac{\partial^{2}\phi}{\partial\varphi^{2}}=0" display="block"><mrow><mrow><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(11)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p ltx_align_center">has the full solution</p>
+<table id="E12" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E12.m1" class="ltx_Math" alttext="\phi=\sum_{l,m}\left(a_{l,m}r^{l}+b_{l,m}r^{-(l+1)}\right)P^{m}_{l}(\xi)e^{im%
+\varphi}," display="block"><mrow><mrow><mi>ϕ</mi><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>l</mi><mo>,</mo><mi>m</mi></mrow></munder><mrow><mrow><mo>(</mo><mrow><mrow><msub><mi>a</mi><mrow><mi>l</mi><mo>,</mo><mi>m</mi></mrow></msub><mo>⁢</mo><msup><mi>r</mi><mi>l</mi></msup></mrow><mo>+</mo><mrow><msub><mi>b</mi><mrow><mi>l</mi><mo>,</mo><mi>m</mi></mrow></msub><mo>⁢</mo><msup><mi>r</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><msubsup><mi>P</mi><mi>l</mi><mi>m</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>φ</mi></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p ltx_align_center">where <math id="m6" class="ltx_Math" alttext="a_{l,m}" display="inline"><msub><mi>a</mi><mrow><mi>l</mi><mo>,</mo><mi>m</mi></mrow></msub></math> is the weight of each base solution.</p>
+</div>
+    
+</div>
+<div id="p23" class="ltx_para">
+<p class="ltx_p">Now that we understand what the “ingredients” of the full solution are, the task that remains is to find <math id="p23.m1" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>s and <math id="p23.m2" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math>s that fit the boundary conditions of our problem. The addition of the term on the right hand side, is just an additional constraint that needs to be satified by appropriate boundary conditions. Let’s do some examples in the homogeneous case first before tackling the case with a right hand side (the <span class="ltx_text ltx_font_italic">inhomogeneous</span> case).</p>
+</div>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Homogeneous Example 1: Outer Spherical radial only potential</h2>
+
+<div id="Sx1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Problem:</span> Find <math id="Sx1.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> that satifies Eqn. <a href="#E11" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11</span></a> such that <math id="Sx1.p1.m2" class="ltx_Math" alttext="\phi(r=R)=A" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>A</mi></mrow></math>, <math id="Sx1.p1.m3" class="ltx_Math" alttext="\phi(r\to\infty)=0" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, and there is no dependence on <math id="Sx1.p1.m4" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> or <math id="Sx1.p1.m5" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math>. 
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span>
+If the solution has no dependence on <math id="Sx1.p1.m6" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math>, then <math id="Sx1.p1.m7" class="ltx_Math" alttext="l=0" display="inline"><mrow><mi>l</mi><mo>=</mo><mn>0</mn></mrow></math>. This can be determined by looking at Eqn. <a href="#E10" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10</span></a> and noting that the only way for <math id="Sx1.p1.m8" class="ltx_Math" alttext="\frac{\partial C}{\partial\xi}=0" display="inline"><mrow><mfrac><mrow><mo rspace="0em">∂</mo><mi>C</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>ξ</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math> is for <math id="Sx1.p1.m9" class="ltx_Math" alttext="l=0" display="inline"><mrow><mi>l</mi><mo>=</mo><mn>0</mn></mrow></math> or <math id="Sx1.p1.m10" class="ltx_Math" alttext="l=-1" display="inline"><mrow><mi>l</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>. If there is no dependence on <math id="Sx1.p1.m11" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math>, them <math id="Sx1.p1.m12" class="ltx_Math" alttext="m=0" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></math>. Thus the solution looks like</p>
+<table id="Ex3" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex3.m1" class="ltx_Math" alttext="\phi(r)=a_{0,0}r^{0}P^{0}_{0}(\xi)+b_{0,0}r^{-1}P^{0}_{0}(\xi)." display="block"><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>⁢</mo><msup><mi>r</mi><mn>0</mn></msup><mo>⁢</mo><msubsup><mi>P</mi><mn>0</mn><mn>0</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>⁢</mo><msup><mi>r</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msubsup><mi>P</mi><mn>0</mn><mn>0</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">However, this can be written more simply. <math id="Sx1.p1.m13" class="ltx_Math" alttext="r^{0}=1" display="inline"><mrow><msup><mi>r</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></math> and <math id="Sx1.p1.m14" class="ltx_Math" alttext="P^{0}_{0}(\xi)=1" display="inline"><mrow><mrow><msubsup><mi>P</mi><mn>0</mn><mn>0</mn></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math>. More concisely, the solution is</p>
+<table id="Ex4" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex4.m1" class="ltx_Math" alttext="\phi(r)=a_{0,0}+\frac{b_{0,0}}{r}." display="block"><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><mfrac><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mi>r</mi></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Now let us use the boundary conditions. We have two unknowns <math id="Sx1.p1.m15" class="ltx_Math" alttext="a_{0,0}+b_{0,0}" display="inline"><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub></mrow></math> and two conditions. They are <math id="Sx1.p1.m16" class="ltx_Math" alttext="\phi(r\to\infty)=a_{0,0}=0" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math> and <math id="Sx1.p1.m17" class="ltx_Math" alttext="\phi(r=R)=a_{0,0}+b_{0,0}/R=A" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><mrow><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>/</mo><mi>R</mi></mrow></mrow><mo>=</mo><mi>A</mi></mrow></math>. Solving this 2x2 system of equations, we can see that <math id="Sx1.p1.m18" class="ltx_Math" alttext="a_{0,0}=0" display="inline"><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math> and <math id="Sx1.p1.m19" class="ltx_Math" alttext="b_{0,0}=RA" display="inline"><mrow><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></math>. So altogether, the final solution is</p>
+</div>
+<div id="Sx1.p2" class="ltx_para ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+<table id="E13" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E13.m1" class="ltx_Math" alttext="\phi(r)=A\frac{R}{r}" display="block"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mfrac><mi>R</mi><mi>r</mi></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(13)</span></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="Sx2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Homogeneous Example 2: Inner Spherical radial only potential</h2>
+
+<div id="Sx2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Problem:</span> Find <math id="Sx2.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> that satifies Eqn. <a href="#E11" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11</span></a> such that <math id="Sx2.p1.m2" class="ltx_Math" alttext="\phi(r=R)=A" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>A</mi></mrow></math>, <math id="Sx2.p1.m3" class="ltx_Math" alttext="\phi^{\prime}(r=0)=0" display="inline"><mrow><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, and there is no dependence on <math id="Sx2.p1.m4" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> or <math id="Sx2.p1.m5" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math>. 
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span>
+Just as before, if the solution has no dependence on <math id="Sx2.p1.m6" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math>, then <math id="Sx2.p1.m7" class="ltx_Math" alttext="l=0" display="inline"><mrow><mi>l</mi><mo>=</mo><mn>0</mn></mrow></math> or <math id="Sx2.p1.m8" class="ltx_Math" alttext="l=-1" display="inline"><mrow><mi>l</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math> and the solution looks like</p>
+<table id="Ex5" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex5.m1" class="ltx_Math" alttext="\phi(r)=a_{0,0}+\frac{b_{0,0}}{r}." display="block"><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><mfrac><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mi>r</mi></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Now let us solve the boundary conditions. They are <math id="Sx2.p1.m9" class="ltx_Math" alttext="\phi^{\prime}(r=0)=-b_{0,0}/r^{2}=0" display="inline"><mrow><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>/</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and <math id="Sx2.p1.m10" class="ltx_Math" alttext="\phi(r=R)=a_{0,0}+b_{0,0}/R=A" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><mrow><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>/</mo><mi>R</mi></mrow></mrow><mo>=</mo><mi>A</mi></mrow></math>. Solving this 2x2 system of equations, we can see that <math id="Sx2.p1.m11" class="ltx_Math" alttext="a_{0,0}=A" display="inline"><mrow><msub><mi>a</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mi>A</mi></mrow></math> and <math id="Sx2.p1.m12" class="ltx_Math" alttext="b_{0,0}=0" display="inline"><mrow><msub><mi>b</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow></math>. So altogether, the final solution is</p>
+</div>
+<div id="Sx2.p2" class="ltx_para ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+<table id="E14" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E14.m1" class="ltx_Math" alttext="\phi(r)=A" display="block"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>A</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(14)</span></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="Sx3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Homogeneous Example 3: Outer Spherical cosine symmetric potential</h2>
+
+<div id="Sx3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Problem:</span> Find <math id="Sx3.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> that satifies Eqn. <a href="#E11" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11</span></a> such that <math id="Sx3.p1.m2" class="ltx_Math" alttext="\phi(r=R)=A\cos\theta=A\xi" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mi>ξ</mi></mrow></mrow></math>, <math id="Sx3.p1.m3" class="ltx_Math" alttext="\phi(r\to\infty)=0" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, and there is no dependence on <math id="Sx3.p1.m4" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math>.
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span>
+The solution to this equation only involves one term in Legendre polynomial. Only the <math id="Sx3.p1.m5" class="ltx_Math" alttext="b_{l=1,m=0}" display="inline"><msub><mi>b</mi><mrow><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></mrow></msub></math> term can be nonzero in order to match that boundary condition. Eqn. <a href="#E15" title="In Homogeneous Example 3: Outer Spherical cosine symmetric potential ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15</span></a> gets a special name. It is the “dipole solution.” Notice how the radial dependence is normalized by the location of the boundary term. One trick that helps solve these problems easier is to just assume that the solution depends on <math id="Sx3.p1.m6" class="ltx_Math" alttext="R/r" display="inline"><mrow><mi>R</mi><mo>/</mo><mi>r</mi></mrow></math> instead of <math id="Sx3.p1.m7" class="ltx_Math" alttext="1/r" display="inline"><mrow><mn>1</mn><mo>/</mo><mi>r</mi></mrow></math> when solving for the constant. That way at the boundary <math id="Sx3.p1.m8" class="ltx_Math" alttext="R/r=1" display="inline"><mrow><mrow><mi>R</mi><mo>/</mo><mi>r</mi></mrow><mo>=</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div class="ltx_logical-block ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+        
+<div id="Sx3.p2" class="ltx_para">
+<table id="E15" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E15.m1" class="ltx_Math" alttext="\phi=A\xi\left(\frac{R}{r}\right)^{2}" display="block"><mrow><mi>ϕ</mi><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mi>ξ</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>R</mi><mi>r</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(15)</span></td>
+</tr></tbody>
+</table>
+</div>
+      
+</div>
+</section>
+<section id="Sx4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Homogeneous Example 4: Outer Spherical sine symmetric potential</h2>
+
+<div id="Sx4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Problem:</span> Find <math id="Sx4.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> that satifies Eqn. <a href="#E11" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11</span></a> such that <math id="Sx4.p1.m2" class="ltx_Math" alttext="\phi(r=R)=A\sin\theta=A\sqrt{1-\xi^{2}}" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mrow></mrow></math>, <math id="Sx4.p1.m3" class="ltx_Math" alttext="\phi(r\to\infty)=0" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, and there is no dependence on <math id="Sx4.p1.m4" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math>. 
+<br class="ltx_break"><span class="ltx_text ltx_font_bold">Solution:</span>
+This solution is more interesting. The inner boundary has some value that depends on the distance of the solution to either pole. One way this can show up is if the boundary condition depended on the distance of the surface to the axis of rotation of a sphere rotating about it’s polar axis. That distance is <math id="Sx4.p1.m5" class="ltx_Math" alttext="R\sin\theta" display="inline"><mrow><mi>R</mi><mo lspace="0.167em">⁢</mo><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></mrow></math>, where <math id="Sx4.p1.m6" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is now the radius of that sphere. This could represent the gravity from a spinning jacket of mass around a planet (the ocean). It could also represent the magnetic field of a electrical current that is spinning on the surface of the planet (the Earth’s dipole). In many physical situations where a sphere spins, this type of solution to Laplace’s equation can occur.</p>
+</div>
+<div id="Sx4.p2" class="ltx_para">
+<p class="ltx_p">To solve this, the easiest method is to break <math id="Sx4.p2.m1" class="ltx_Math" alttext="\sqrt{1-\xi^{2}}" display="inline"><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></math> in a series of Legendre polynomials. Since the solution always looks like a sum of Legendre polynomials, this will tell us which “base” solutions are necessary to complete the full solution. For now, I will just say that the answer the infinite series</p>
+<table id="Ex6" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex6.m1" class="ltx_Math" alttext="\sqrt{1-\xi^{2}}=\frac{\pi}{2}\left(P_{1}(\xi)-\frac{1}{3}P_{3}(\xi)+\frac{1}{%
+5}P_{5}(\xi)-\frac{1}{7}P_{7}(\xi)+...\right)." display="block"><mrow><mrow><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mrow><mrow><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><msub><mi>P</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>⁢</mo><msub><mi>P</mi><mn>5</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>7</mn></mfrac><mo>⁢</mo><msub><mi>P</mi><mn>7</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The trick to figure this out is to use the orthogonality property of Legendre polynomials. This is the canonical way to “write any function in terms of a series of Legendre polynomials.” At this point, you may be asking yourself, gosh we took something kinda simple and blew it up into this infinite series. Surely, this isn’t the most direct way to do this problem? I assume you dear reader that this is necessary. Why? Because the Legenre polynomials are the “basic” solutions to Eqn. <a href="#E11" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">11</span></a>. Unforunately, <math id="Sx4.p2.m2" class="ltx_Math" alttext="\sqrt{1-\xi^{2}}" display="inline"><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></math> is not a solution by itself.</p>
+</div>
+<div id="Sx4.p3" class="ltx_para">
+<p class="ltx_p">Now we can begin to formulate our answer. The solution will be an infinite series with only nonzero <math id="Sx4.p3.m1" class="ltx_Math" alttext="m=0" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></math> terms. The even <math id="Sx4.p3.m2" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> terms will also be zero since they do not show up in the series expansion of <math id="Sx4.p3.m3" class="ltx_Math" alttext="\sqrt{1-\xi^{2}}" display="inline"><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></math>. Dropping the <math id="Sx4.p3.m4" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> index and the <math id="Sx4.p3.m5" class="ltx_Math" alttext="a_{l}" display="inline"><msub><mi>a</mi><mi>l</mi></msub></math> terms which don’t decay at infinity, this means we are left with</p>
+<table id="Ex7" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex7.m1" class="ltx_Math" alttext="\phi=\sum_{l,\text{odd}}b_{l}r^{-(l+1)}P_{l}(\xi)." display="block"><mrow><mrow><mi>ϕ</mi><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>l</mi><mo>,</mo><mtext>odd</mtext></mrow></munder><mrow><msub><mi>b</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>r</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="Sx4.p4" class="ltx_para">
+<p class="ltx_p">From matching terms at <math id="Sx4.p4.m1" class="ltx_Math" alttext="r=R" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow></math>, we arrive at the solution:</p>
+</div>
+<div id="Sx4.p5" class="ltx_para ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+<table id="Ex8" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex8.m1" class="ltx_Math" alttext="\phi=\frac{A\pi}{2}\left(\frac{R}{r}\right)^{2}P_{1}(\xi)-\frac{A\pi}{6}\left(%
+\frac{R}{r}\right)^{4}P_{3}(\xi)+\frac{A\pi}{10}\left(\frac{R}{r}\right)^{6}P_%
+{5}(\xi)-\frac{A\pi}{14}\left(\frac{R}{r}\right)^{8}P_{7}(\xi)+..." display="block"><mrow><mi>ϕ</mi><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mfrac><mrow><mi>A</mi><mo>⁢</mo><mi>π</mi></mrow><mn>2</mn></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>R</mi><mi>r</mi></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><msub><mi>P</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mfrac><mrow><mi>A</mi><mo>⁢</mo><mi>π</mi></mrow><mn>6</mn></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>R</mi><mi>r</mi></mfrac><mo>)</mo></mrow><mn>4</mn></msup><mo>⁢</mo><msub><mi>P</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mrow><mi>A</mi><mo>⁢</mo><mi>π</mi></mrow><mn>10</mn></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>R</mi><mi>r</mi></mfrac><mo>)</mo></mrow><mn>6</mn></msup><mo>⁢</mo><msub><mi>P</mi><mn>5</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>−</mo><mrow><mfrac><mrow><mi>A</mi><mo>⁢</mo><mi>π</mi></mrow><mn>14</mn></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mi>R</mi><mi>r</mi></mfrac><mo>)</mo></mrow><mn>8</mn></msup><mo>⁢</mo><msub><mi>P</mi><mn>7</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div id="Sx4.p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Discussion:</span> This example demonstrates some pretty common properties of solutions to Laplace’s equation in spherical coordinates.</p>
+</div>
+<div id="Sx4.p7" class="ltx_para">
+<ol id="Sx4.I1" class="ltx_enumerate">
+<li id="Sx4.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span> 
+<div id="Sx4.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Solutions with even a simple angular dependence rapidly become infinite series.</p>
+</div>
+</li>
+<li id="Sx4.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span> 
+<div id="Sx4.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">At far distances from the center of the solution, the lowest <math id="Sx4.I1.i2.p1.m1" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math> components dominate.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Sx4.p8" class="ltx_para">
+<p class="ltx_p">Idea #2 helps us make sense of the solution. Even though the exact solution is this complicated thing that can never be fully expressed, the gist of it (i.e. the highest order solutions) are pretty easily found. From here on out, basically all solutions will become infinite series.</p>
+</div>
+<div id="Sx4.p9" class="ltx_para">
+<p class="ltx_p">Fig. <a href="#F1" title="Figure 1 ‣ Homogeneous Example 4: Outer Spherical sine symmetric potential ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> shows contour plots of the first two solutions. The red circle indicates <math id="Sx4.p9.m1" class="ltx_Math" alttext="r=R" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow></math> (the boundary of the sphere). Inside the red circle, the right subplot has a figure 8, which is different than the vertical line from just the first term. <span class="ltx_text ltx_font_italic">Outside</span> the sphere, the two solutions are very similar.</p>
+</div>
+<figure id="F1" class="ltx_figure"><img src="figs/sin-field.png" id="F1.g1" class="ltx_graphics ltx_centering" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>Series expansion solution to <math id="F1.m2" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> showing the first and second terms in the expansion. The contours are the same in both subplots.</figcaption>
+</figure>
+<div id="Sx4.p10" class="ltx_para">
+<p class="ltx_p">The difference between these two subplots is barely perceptible. In fact, the left subplot Fig. <a href="#F1" title="Figure 1 ‣ Homogeneous Example 4: Outer Spherical sine symmetric potential ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> is just the dipole solution (Eqn. <a href="#E15" title="In Homogeneous Example 3: Outer Spherical cosine symmetric potential ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15</span></a>)! So even if the surface change swaps from depending on <math id="Sx4.p10.m1" class="ltx_Math" alttext="\sin\theta" display="inline"><mrow><mi>sin</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></math> to <math id="Sx4.p10.m2" class="ltx_Math" alttext="\cos\theta" display="inline"><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mi>θ</mi></mrow></math>, the solution still looks like a dipole. This is because each term in the expansion decays <math id="Sx4.p10.m3" class="ltx_Math" alttext="1/r^{2}" display="inline"><mrow><mn>1</mn><mo>/</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></math> quicker than the previous one. So as <math id="Sx4.p10.m4" class="ltx_Math" alttext="r/R\to 0" display="inline"><mrow><mrow><mi>r</mi><mo>/</mo><mi>R</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow></math>, the higher order terms die off quicker.</p>
+</div>
+</section>
+<section id="Sx5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Solving the inhomogeneous part</h2>
+
+<div id="Sx5.p1" class="ltx_para">
+<p class="ltx_p">Now we need to handle the pesky right hand side of Poisson’s equation. Up until now, we have solved the homogeneous part of the equation with weird boundary conditions. This doesn’t help us solve for the surface charge on a sphere<span id="footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+              <span class="ltx_tag ltx_tag_note">3</span>
+              
+              
+              
+            Yeah, that. Remember that’s how this started</span></span></span>.</p>
+</div>
+<div id="Sx5.p2" class="ltx_para">
+<p class="ltx_p">In general, this is quite hard. Solving <math id="Sx5.p2.m1" class="ltx_Math" alttext="\nabla^{2}\phi=f" display="inline"><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mo>=</mo><mi>f</mi></mrow></math> for some arbitrary <math id="Sx5.p2.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is not known how to be done in general<span id="footnote4" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">4</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">4</sup>
+              <span class="ltx_tag ltx_tag_note">4</span>
+              
+              
+              
+            To convince yourself of this, try guess and checking solutions ot Eqn. <a href="#E8" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8</span></a> with some right hand side. Let’s pick <math id="footnote4.m1" class="ltx_Math" alttext="\exp(-r^{2})" display="inline"><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></math>. If you find a nice function you can plug in to get the answer, let me know. This is just in one dimension. I have no idea how one could find a function that neatly solves this in a more broad setting.</span></span></span>. However, we’re going to use a trick.</p>
+</div>
+<div id="Sx5.p3" class="ltx_para">
+<p class="ltx_p">Pretend we can split <math id="Sx5.p3.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> into an integral of other functions that are very localized. The linearity of the problem means we just need to find particular solutions for <span class="ltx_text ltx_font_italic">each</span> partial sum of <math id="Sx5.p3.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>. That is if <math id="Sx5.p3.m3" class="ltx_Math" alttext="f=f_{1}+f_{2}+..." display="inline"><mrow><mi>f</mi><mo>=</mo><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>+</mo><msub><mi>f</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>, and <math id="Sx5.p3.m4" class="ltx_Math" alttext="\nabla^{2}\phi=f_{1}+f_{2}+f_{3}+.." display="inline"><mrow><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mo>=</mo><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>+</mo><msub><mi>f</mi><mn>2</mn></msub><mo>+</mo><mrow><msub><mi>f</mi><mn>3</mn></msub><mo rspace="0em">+</mo></mrow></mrow></mrow><mo lspace="0em" rspace="0.0835em">.</mo><mo lspace="0.0835em">.</mo></mrow></math>, then the solution is <math id="Sx5.p3.m5" class="ltx_Math" alttext="\phi=\phi_{h}+\phi_{p1}+\phi_{p2}+\phi_{p3}" display="inline"><mrow><mi>ϕ</mi><mo>=</mo><mrow><msub><mi>ϕ</mi><mi>h</mi></msub><mo>+</mo><msub><mi>ϕ</mi><mrow><mi>p</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>ϕ</mi><mrow><mi>p</mi><mo>⁢</mo><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>ϕ</mi><mrow><mi>p</mi><mo>⁢</mo><mn>3</mn></mrow></msub></mrow></mrow></math> where <math id="Sx5.p3.m6" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> denotes the homogeneous solution and <math id="Sx5.p3.m7" class="ltx_Math" alttext="pi" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mi>i</mi></mrow></math> denotes the <math id="Sx5.p3.m8" class="ltx_Math" alttext="ith" display="inline"><mrow><mi>i</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></math> particular solution.</p>
+</div>
+<div id="Sx5.p4" class="ltx_para">
+<p class="ltx_p">At first, it would appear that we have not really done anything. In fact we’ve just created more problems to solve. This is where more trickery comes in.</p>
+</div>
+<div id="Sx5.p5" class="ltx_para">
+<p class="ltx_p">Introducting the Dirac delta function (<math id="Sx5.p5.m1" class="ltx_Math" alttext="\delta(x)" display="inline"><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>), a function made for the purpose of turning continuous 3D Cartesian space into a sum. It is defined by the property</p>
+<table id="Ex9" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex9.m1" class="ltx_Math" alttext="\int_{a}^{b}\delta(x)dx=1,a&lt;0&lt;b." display="block"><mrow><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn><mo>&lt;</mo><mi>b</mi></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">If the interval does not contain zero, then the integral is zero. In this way, Dirac delta functions “contribute” the value of a function at <math id="Sx5.p5.m2" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>. So now, we can rewrite <math id="Sx5.p5.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> (in 1D) as</p>
+<table id="Ex10" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex10.m1" class="ltx_Math" alttext="f(x)=\int f(x^{\prime})\delta(x-x^{\prime})dx^{\prime}." display="block"><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><msup><mi>x</mi><mo>′</mo></msup></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">This equation is nonsense. Consider that we have just written down a function as an integral of itself times something else. This should break your brain slightly.</p>
+</div>
+<div id="Sx5.p6" class="ltx_para">
+<p class="ltx_p">The trick here is that now the independent variable is inside of the Dirac delta function. Conceputally, we just need to learn how to solve one type of inhomogeneous equation, the one which gives us a Dirac delta function, and then we can sum up the total particular solution from all of the solutions of the infinite Dirac delta problems.</p>
+</div>
+<div id="Sx5.p7" class="ltx_para">
+<p class="ltx_p">That thing, “the solution to the inhomogeneous equation that gives us a Dirac delta function” is so important that it gets a name… <span class="ltx_text ltx_font_italic">the Green’s function</span>. From this, all other solutions can flow. In fact, Green’s functions exist for all linear partial differential equations, not just Poisson’s equation. Funny enough, the Green’s functions for the heat and wave equations end up looking a lot like the ones for Poisson’s equation, so this is as good a place as any to start learning them. <a href="https://en.wikipedia.org/wiki/Green%27s_function" title="" class="ltx_ref ltx_href">Wikipedia</a> has a pretty good list of the well known Green’s functions.</p>
+</div>
+<div id="Sx5.p8" class="ltx_para">
+<p class="ltx_p">We define Green’s functions as</p>
+<table id="Ex11" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex11.m1" class="ltx_Math" alttext="\nabla^{2}G=\delta^{3}(\mathbf{x})." display="block"><mrow><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mi>G</mi></mrow><mo>=</mo><mrow><msup><mi>δ</mi><mn>3</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The solution to <math id="Sx5.p8.m1" class="ltx_Math" alttext="\nabla^{2}\phi=f" display="inline"><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mo>=</mo><mi>f</mi></mrow></math> is then given by</p>
+<table id="E16" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E16.m1" class="ltx_Math" alttext="\phi=\int G(\mathbf{x},\mathbf{x}^{\prime})f(\mathbf{x}^{\prime})d^{3}x^{%
+\prime}." display="block"><mrow><mrow><mi>ϕ</mi><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo>,</mo><msup><mi>𝐱</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>𝐱</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>d</mi><mn>3</mn></msup><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(16)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">All these equations are is the same, “summing up all of the particular solutions” logic that we presented above. The Green’s function is nice because in principle it turns a difficult problem into a mechanistic integral. Instead of worrying about finding all of the particular solutions analytically, you just have to compute an integral.</p>
+</div>
+<div id="Sx5.p9" class="ltx_para">
+<p class="ltx_p">In principle, this sounds great. All we have to do is find the Green’s function and then compute some integrals. What could go wrong?</p>
+</div>
+<div id="Sx5.p10" class="ltx_para">
+<p class="ltx_p">Well, now we have to deal with one incredibly annoying detail. Green’s functions are not in general smooth. At <math id="Sx5.p10.m1" class="ltx_Math" alttext="\mathbf{x}=\mathbf{x}^{\prime}" display="inline"><mrow><mi>𝐱</mi><mo>=</mo><msup><mi>𝐱</mi><mo>′</mo></msup></mrow></math>, the derivative of Green’s functions is not continuous. They tend to look like the drawing in Fig. <a href="#F2" title="Figure 2 ‣ Solving the inhomogeneous part ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>.</p>
+</div>
+<figure id="F2" class="ltx_figure"><img src="figs/illustrating-greens-functions.png" id="F2.g1" class="ltx_graphics ltx_centering" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Typical Green’s function. At <math id="F2.m2" class="ltx_Math" alttext="G(x=x^{\prime},x^{\prime})" display="inline"><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>=</mo><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>,</mo><msup><mi>x</mi><mo>′</mo></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>, the function is continuous, but has a discontinuity in its derivative.</figcaption>
+</figure>
+<div id="Sx5.p11" class="ltx_para">
+<p class="ltx_p">Suppose we want to solve a 1D Poisson equation <math id="Sx5.p11.m1" class="ltx_Math" alttext="\phi^{\prime\prime}+\phi=f(x)" display="inline"><mrow><mrow><msup><mi>ϕ</mi><mo>′′</mo></msup><mo>+</mo><mi>ϕ</mi></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> with boundary conditions <math id="Sx5.p11.m2" class="ltx_Math" alttext="\phi(0)=0" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and <math id="Sx5.p11.m3" class="ltx_Math" alttext="\phi(L)=0" display="inline"><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>L</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. <math id="Sx5.p11.m4" class="ltx_Math" alttext="f(x)=4\delta(x-L/2)" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. The Green’s function is <math id="Sx5.p11.m5" class="ltx_Math" alttext="G(x,x^{\prime})=(x-x^{\prime})\Theta(x-x^{\prime})+x\alpha(x^{\prime})+\beta(x%
+^{\prime})" display="inline"><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, where <math id="Sx5.p11.m6" class="ltx_Math" alttext="\Theta(x-x^{\prime})" display="inline"><mrow><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></math> is a Heaviside step function. This is straight for Wikipedia. Now we can write down Eqn. <a href="#E16" title="In Solving the inhomogeneous part ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16</span></a>.</p>
+</div>
+<div id="Sx5.p12" class="ltx_para">
+<table id="Sx7.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="E17"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="E17.m1" class="ltx_Math" alttext="\displaystyle\phi" display="inline"><mi>ϕ</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E17.m2" class="ltx_Math" alttext="\displaystyle=\int_{0}^{L}\left[(x-x^{\prime})\Theta(x-x^{\prime})+x\alpha(x^{%
+\prime})+\beta(x^{\prime})\right]3\delta(x^{\prime}-L/2)dx^{\prime}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mi>L</mi></msubsup></mstyle><mrow><mrow><mo>[</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mo>⁢</mo><mn>3</mn><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>−</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><msup><mi>x</mi><mo>′</mo></msup></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(17)</span></td>
+</tr></tbody>
+<tbody id="E18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="E18.m1" class="ltx_Math" alttext="\displaystyle=3(x-L/2)\Theta(x-L/2)+3x\alpha+3\beta" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>α</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>β</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(18)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">From our boundary condition, we can say that <math id="Sx5.p12.m1" class="ltx_Math" alttext="\beta=L/2" display="inline"><mrow><mi>β</mi><mo>=</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow></math> and <math id="Sx5.p12.m2" class="ltx_Math" alttext="\alpha=-1" display="inline"><mrow><mi>α</mi><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></math>. This leaves us with</p>
+<table id="Ex12" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex12.m1" class="ltx_Math" alttext="\phi=3(x-L/2)\Theta(x-L/2)-3x+3L/2." display="block"><mrow><mrow><mi>ϕ</mi><mo>=</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>L</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">If you plotted this, it would look like a positive sloped line up to <math id="Sx5.p12.m3" class="ltx_Math" alttext="x=L/2" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></mrow></math> and then a neagtive sloped line from <math id="Sx5.p12.m4" class="ltx_Math" alttext="L/2" display="inline"><mrow><mi>L</mi><mo>/</mo><mn>2</mn></mrow></math> to <math id="Sx5.p12.m5" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math>. The forcing function is just a point in space, to the intregral over <math id="Sx5.p12.m6" class="ltx_Math" alttext="x^{\prime}" display="inline"><msup><mi>x</mi><mo>′</mo></msup></math> really just had one term.</p>
+</div>
+</section>
+<section id="Sx6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Solving the inhomogeneous part (easier)</h2>
+
+<div id="Sx6.p1" class="ltx_para">
+<p class="ltx_p">There’s one more trick we can do before solving the original problem. This trick is to cheat. Find the general Green’s function for a 3D spherical Laplacian is messy. If the inhomogeneous part is just going to be a delta function on the surface of the sphere, then is there an easier way?</p>
+</div>
+<div id="Sx6.p2" class="ltx_para">
+<p class="ltx_p">Let’s just guess what the solution looks like. It’s probably something like</p>
+<table id="Ex13" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex13.m1" class="ltx_Math" alttext="\phi=\begin{cases}\phi_{1},&amp;r&lt;R\\
+\phi_{2},&amp;r&gt;R\end{cases}" display="block"><mrow><mi>ϕ</mi><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi>r</mi><mo>&lt;</mo><mi>R</mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><msub><mi>ϕ</mi><mn>2</mn></msub><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi>r</mi><mo>&gt;</mo><mi>R</mi></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><math id="Sx6.p2.m1" class="ltx_Math" alttext="\phi_{2}" display="inline"><msub><mi>ϕ</mi><mn>2</mn></msub></math> should obey the boundary condition <math id="Sx6.p2.m2" class="ltx_Math" alttext="\phi_{2}(r\to\infty)=0" display="inline"><mrow><mrow><msub><mi>ϕ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. <math id="Sx6.p2.m3" class="ltx_Math" alttext="\phi_{1}" display="inline"><msub><mi>ϕ</mi><mn>1</mn></msub></math> should probably not blow up at the origin. This can be justified because outside of the thin shell at <math id="Sx6.p2.m4" class="ltx_Math" alttext="r=R" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow></math>, <math id="Sx6.p2.m5" class="ltx_Math" alttext="\phi_{1}" display="inline"><msub><mi>ϕ</mi><mn>1</mn></msub></math> and <math id="Sx6.p2.m6" class="ltx_Math" alttext="\phi_{2}" display="inline"><msub><mi>ϕ</mi><mn>2</mn></msub></math> are solutions to <math id="Sx6.p2.m7" class="ltx_Math" alttext="\nabla^{2}\phi=0" display="inline"><mrow><mrow><msup><mo>∇</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>. The trick is going to be making sure the solutions “behave” at the boundary.</p>
+</div>
+</section>
+<section id="Sx7" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Do the solution</h2>
+
+<div id="Sx7.p1" class="ltx_para">
+<p class="ltx_p">Let’s restart. Here’s the problem (Eqn. <a href="#E1" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> and <a href="#E2" title="In Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>) again written as explicitly as possible.</p>
+</div>
+<div id="Sx7.p2" class="ltx_para">
+<table id="E19" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E19.m1" class="ltx_Math" alttext="\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\phi}{\partial r}\right)+%
+\frac{1}{\sqrt{1-\xi^{2}}}\frac{\partial^{2}\phi}{\partial\xi^{2}}+\frac{1}{1-%
+\xi^{2}}\frac{\partial^{2}\phi}{\partial\varphi^{2}}=-\frac{\sigma}{\epsilon_{%
+0}}\delta(r-R)," display="block"><mrow><mrow><mrow><mrow><mfrac><mo>∂</mo><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>ξ</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><msup><mi>φ</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mi>σ</mi><msub><mi>ϵ</mi><mn>0</mn></msub></mfrac><mo>⁢</mo><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>−</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(19)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="Sx7.p3" class="ltx_para">
+<p class="ltx_p">The solution in each region is (most generally) given as</p>
+</div>
+<div id="Sx7.p4" class="ltx_para">
+<table id="E20" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E20.m1" class="ltx_Math" alttext="\phi_{1,2}=\sum_{l,m}\left(a_{l,m}r^{l}+b_{l,m}r^{-(l+1)}\right)P^{m}_{l}(\xi)%
+e^{im\varphi}," display="block"><mrow><mrow><msub><mi>ϕ</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>l</mi><mo>,</mo><mi>m</mi></mrow></munder><mrow><mrow><mo>(</mo><mrow><mrow><msub><mi>a</mi><mrow><mi>l</mi><mo>,</mo><mi>m</mi></mrow></msub><mo>⁢</mo><msup><mi>r</mi><mi>l</mi></msup></mrow><mo>+</mo><mrow><msub><mi>b</mi><mrow><mi>l</mi><mo>,</mo><mi>m</mi></mrow></msub><mo>⁢</mo><msup><mi>r</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><msubsup><mi>P</mi><mi>l</mi><mi>m</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>φ</mi></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(20)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="Sx7.p5" class="ltx_para">
+<p class="ltx_p">There is no dependence on <math id="Sx7.p5.m1" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> anywhere in this problem, so we can simplify immediately to</p>
+</div>
+<div id="Sx7.p6" class="ltx_para">
+<table id="E21" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E21.m1" class="ltx_Math" alttext="\phi_{1,2}=\sum_{l}\left(a_{l}r^{l}+b_{l}r^{-(l+1)}\right)P_{l}(\xi)," display="block"><mrow><mrow><msub><mi>ϕ</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mi>l</mi></munder><mrow><mrow><mo>(</mo><mrow><mrow><msub><mi>a</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>r</mi><mi>l</mi></msup></mrow><mo>+</mo><mrow><msub><mi>b</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>r</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(21)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where it is assumed that all of these coefficients are for <math id="Sx7.p6.m1" class="ltx_Math" alttext="m=0" display="inline"><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></math>. Additionally, we can use the boundary conditions to select while <math id="Sx7.p6.m2" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math>’s are allowed to remain. For <math id="Sx7.p6.m3" class="ltx_Math" alttext="\phi_{1}" display="inline"><msub><mi>ϕ</mi><mn>1</mn></msub></math>, if any <math id="Sx7.p6.m4" class="ltx_Math" alttext="l&lt;0" display="inline"><mrow><mi>l</mi><mo>&lt;</mo><mn>0</mn></mrow></math>, then the solution blows up at the center of the sphere. We can discard those. For <math id="Sx7.p6.m5" class="ltx_Math" alttext="\phi_{2}" display="inline"><msub><mi>ϕ</mi><mn>2</mn></msub></math>, the solution must go to zero at infinity. Therefore, the <span class="ltx_text ltx_font_italic">only</span> allowed solutions are those with <math id="Sx7.p6.m6" class="ltx_Math" alttext="l&lt;0" display="inline"><mrow><mi>l</mi><mo>&lt;</mo><mn>0</mn></mrow></math>. So we can say</p>
+<table id="E22" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E22.m1" class="ltx_Math" alttext="\phi_{1}=\sum_{l\geq 0}a_{l}r^{l}P_{l}(\xi)," display="block"><mrow><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>l</mi><mo>≥</mo><mn>0</mn></mrow></munder><mrow><msub><mi>a</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>r</mi><mi>l</mi></msup><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(22)</span></td>
+</tr></tbody>
+</table>
+<table id="E23" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E23.m1" class="ltx_Math" alttext="\phi_{2}=\sum_{l\geq 0}b_{l}\frac{1}{r^{l+1}}P_{l}(\xi)," display="block"><mrow><mrow><msub><mi>ϕ</mi><mn>2</mn></msub><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>l</mi><mo>≥</mo><mn>0</mn></mrow></munder><mrow><msub><mi>b</mi><mi>l</mi></msub><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>r</mi><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(23)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where we have renamed <math id="Sx7.p6.m7" class="ltx_Math" alttext="a_{l}\to b_{l}" display="inline"><mrow><msub><mi>a</mi><mi>l</mi></msub><mo stretchy="false">→</mo><msub><mi>b</mi><mi>l</mi></msub></mrow></math> for <math id="Sx7.p6.m8" class="ltx_Math" alttext="\phi_{2}" display="inline"><msub><mi>ϕ</mi><mn>2</mn></msub></math> to distinguish between the two sets of constants. Now we will set the solutions equal at <math id="Sx7.p6.m9" class="ltx_Math" alttext="r=R" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow></math>.</p>
+<table id="Ex14" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex14.m1" class="ltx_Math" alttext="\phi_{1}(r=R)=\phi_{2}(r=R)=\sum_{l\geq 0}a_{l}R^{l}P_{l}(\xi)=\sum_{l&gt;0}b_{l}%
+\frac{1}{R^{l+1}}P_{l}(\xi)" display="block"><mrow><mrow><msub><mi>ϕ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>ϕ</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>l</mi><mo>≥</mo><mn>0</mn></mrow></munder><mrow><msub><mi>a</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>R</mi><mi>l</mi></msup><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>l</mi><mo>&gt;</mo><mn>0</mn></mrow></munder><mrow><msub><mi>b</mi><mi>l</mi></msub><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>R</mi><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Now this relationship is true for all <math id="Sx7.p6.m10" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math>. The only way this is possible is if</p>
+<table id="Ex15" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex15.m1" class="ltx_Math" alttext="a_{l}R^{l}=b_{l}\frac{1}{R^{l+1}}" display="block"><mrow><mrow><msub><mi>a</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>R</mi><mi>l</mi></msup></mrow><mo>=</mo><mrow><msub><mi>b</mi><mi>l</mi></msub><mo>⁢</mo><mfrac><mn>1</mn><msup><mi>R</mi><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and <math id="Sx7.p6.m11" class="ltx_Math" alttext="a_{0}=0" display="inline"><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow></math>. So far everything we have done is for an axially symmetric sphere that doesn’t blow up at the origin and decays at infinity. This type of analysis is quite general. The right hand side has <span class="ltx_text ltx_font_italic">not</span> been used yet except to note that <math id="Sx7.p6.m12" class="ltx_Math" alttext="\varphi" display="inline"><mi>φ</mi></math> is ignorable. Using our piecewise notation again, the solution looks like</p>
+</div>
+<div id="Sx7.p7" class="ltx_para">
+<table id="E24" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E24.m1" class="ltx_Math" alttext="\phi=\begin{cases}\sum_{l\geq 0}a_{l}r^{l}P_{l}(\xi),&amp;r&lt;R\\
+\sum_{l\geq 0}a_{l}R^{l}\left(\frac{R}{r}\right)^{l+1}P_{l}(\xi),&amp;r&gt;R\end{cases}" display="block"><mrow><mi>ϕ</mi><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mstyle displaystyle="false"><msub><mo>∑</mo><mrow><mi>l</mi><mo>≥</mo><mn>0</mn></mrow></msub></mstyle><mrow><msub><mi>a</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>r</mi><mi>l</mi></msup><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi>r</mi><mo>&lt;</mo><mi>R</mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mstyle displaystyle="false"><msub><mo>∑</mo><mrow><mi>l</mi><mo>≥</mo><mn>0</mn></mrow></msub></mstyle><mrow><msub><mi>a</mi><mi>l</mi></msub><mo>⁢</mo><msup><mi>R</mi><mi>l</mi></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mi>R</mi><mi>r</mi></mfrac></mstyle><mo>)</mo></mrow><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi>r</mi><mo>&gt;</mo><mi>R</mi></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(24)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="Sx7.p8" class="ltx_para">
+<p class="ltx_p">Now it is time to do the “jump condition.” This is how the right hand side is going to be used. Recall how the Greens function (and hence the final solution) changed slope at the point where the right hand side was? Well, it turns out that the change in that slope is actually given by the right hand side. This is annoying to think about, but in practice easy to figure out. Take Eqn. <a href="#E19" title="In Do the solution ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19</span></a> and integrate through <math id="Sx7.p8.m1" class="ltx_Math" alttext="r=R" display="inline"><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow></math> (<math id="Sx7.p8.m2" class="ltx_Math" alttext="\int_{R-\epsilon}^{R+\epsilon}dr" display="inline"><mrow><msubsup><mo>∫</mo><mrow><mi>R</mi><mo>−</mo><mi>ϵ</mi></mrow><mrow><mi>R</mi><mo>+</mo><mi>ϵ</mi></mrow></msubsup><mrow><mo lspace="0.167em" rspace="0em">𝑑</mo><mi>r</mi></mrow></mrow></math> for some small <math id="Sx7.p8.m3" class="ltx_Math" alttext="\epsilon" display="inline"><mi>ϵ</mi></math>). I have left off the parts which are zero by the solution we picked.</p>
+</div>
+<div id="Sx7.p9" class="ltx_para">
+<table id="E25" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E25.m1" class="ltx_Math" alttext="\left(r^{2}\frac{\partial\phi_{2}}{\partial r}\right)\Big{|}_{R}-\left(r^{2}%
+\frac{\partial\phi_{1}}{\partial r}\right)\Big{|}_{R}=-\frac{\sigma}{\epsilon_%
+{0}}," display="block"><mrow><mrow><mrow><msub><mrow><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mn>2</mn></msub></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mi>R</mi></msub><mo>−</mo><msub><mrow><mrow><mo>(</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mn>1</mn></msub></mrow><mrow><mo rspace="0em">∂</mo><mi>r</mi></mrow></mfrac></mrow><mo>)</mo></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mi>R</mi></msub></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mi>σ</mi><msub><mi>ϵ</mi><mn>0</mn></msub></mfrac></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(25)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Substituting in Eqn. <a href="#E24" title="In Do the solution ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">24</span></a> into Eqn. <a href="#E25" title="In Do the solution ‣ Spherical conductor with surface charge ‣ DesJardin Blog" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25</span></a> we get that</p>
+</div>
+<div id="Sx7.p10" class="ltx_para">
+<table id="E26" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E26.m1" class="ltx_Math" alttext="\sum_{l}a_{l}\left(R^{l+1}(l+1)-lR^{-(l+1)}\right)P_{l}(\xi)=-\frac{\sigma}{%
+\epsilon_{0}}" display="block"><mrow><mrow><munder><mo movablelimits="false">∑</mo><mi>l</mi></munder><mrow><msub><mi>a</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><msup><mi>R</mi><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>l</mi><mo>⁢</mo><msup><mi>R</mi><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msup></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><msub><mi>P</mi><mi>l</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mi>σ</mi><msub><mi>ϵ</mi><mn>0</mn></msub></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(26)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Again, using the orthogonality of Legendre polynomials, we can see that the only nonzero component is <math id="Sx7.p10.m1" class="ltx_Math" alttext="a_{0}" display="inline"><msub><mi>a</mi><mn>0</mn></msub></math>. This leaves us with <math id="Sx7.p10.m2" class="ltx_Math" alttext="a_{0}=\sigma/(\epsilon_{0}R)" display="inline"><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mrow><mi>σ</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ϵ</mi><mn>0</mn></msub><mo>⁢</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Plugging this in, we find the solution is</p>
+</div>
+<div id="Sx7.p11" class="ltx_para ltx_framed ltx_framed_rectangle" style="border-color: #000000;padding:9pt;border-width:0.4pt;">
+<table id="E27" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E27.m1" class="ltx_Math" alttext="\phi=\begin{cases}\frac{\sigma}{\epsilon_{0}R},&amp;r&lt;R\\
+\frac{\sigma}{\epsilon_{0}R}\left(\frac{R}{r}\right),&amp;r&gt;R\end{cases}" display="block"><mrow><mi>ϕ</mi><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mstyle displaystyle="false"><mfrac><mi>σ</mi><mrow><msub><mi>ϵ</mi><mn>0</mn></msub><mo>⁢</mo><mi>R</mi></mrow></mfrac></mstyle><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi>r</mi><mo>&lt;</mo><mi>R</mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mstyle displaystyle="false"><mfrac><mi>σ</mi><mrow><msub><mi>ϵ</mi><mn>0</mn></msub><mo>⁢</mo><mi>R</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mstyle displaystyle="false"><mfrac><mi>R</mi><mi>r</mi></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi>r</mi><mo>&gt;</mo><mi>R</mi></mrow></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(27)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="Sx7.p12" class="ltx_para">
+<p class="ltx_p">The question that prompted this article is, “what is the surface charge on a conductor?” Well, if the a conducting sphere of radius <math id="Sx7.p12.m1" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math> cm has a charge of <math id="Sx7.p12.m2" class="ltx_Math" alttext="3.3" display="inline"><mn>3.3</mn></math> V, then by the solution we just found, it has a surface charge of <math id="Sx7.p12.m3" class="ltx_Math" alttext="\sigma=\epsilon_{0}\phi/R=8.9\times 10^{-12}C/(V\cdot m)\cdot 3.3V/10^{-2}m=3%
+\times 10^{-9}C/m^{2}" display="inline"><mrow><mi>σ</mi><mo>=</mo><mrow><mrow><msub><mi>ϵ</mi><mn>0</mn></msub><mo>⁢</mo><mi>ϕ</mi></mrow><mo>/</mo><mi>R</mi></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mrow><mrow><mrow><mn>8.9</mn><mo lspace="0.222em" rspace="0.222em">×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>12</mn></mrow></msup></mrow><mo>⁢</mo><mi>C</mi></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>V</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>m</mi></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mn>3.3</mn></mrow><mo>⁢</mo><mi>V</mi></mrow><mo>/</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup></mrow><mo>⁢</mo><mi>m</mi></mrow><mo>=</mo><mrow><mrow><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup></mrow><mo>⁢</mo><mi>C</mi></mrow><mo>/</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></mrow></math>.</p>
+</div>
+</section>
 </section>
 </div>
 <footer class="ltx_page_footer">
 <div class="ltx_align_center">
 <a href="./" title="" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title">DesJardin Blog</span></a>
 </div>
-<div class="ltx_page_logo">Generated  on Wed Oct  1 15:34:47 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Sat Nov  8 08:21:47 2025 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>
