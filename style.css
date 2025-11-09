@@ -13,6 +13,15 @@
     font-size: 18pt;
 }
 
+
+.ltx_note_mark {
+    color: #c88df0; /*#03DAC6;*/
+}
+
+.ltx_note_content {
+    background-color: #702670;
+}
+
 .ltx_title.ltx_title_document {
     visibility:hidden;
     font-size: 0%;
