@@ -27,6 +27,11 @@
     font-size: 0%;
 }
 
+.ltx_page_content {
+    max-width: 42rem;
+    margin: 0 auto; /* Centers horizontally */
+}
+
 body {
     background-color: #1C1B22;
     font
